@@ -6,6 +6,7 @@ import eslintReactHooks from 'eslint-plugin-react-hooks';
 import eslintReactRefresh from 'eslint-plugin-react-refresh';
 import prettierPlugin from 'eslint-plugin-prettier';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import i18next from 'eslint-plugin-i18next';
 
 export default tseslint.config(
     {
@@ -21,7 +22,9 @@ export default tseslint.config(
         ignores: ['dist', 'node_modules', 'coverage', 'eslint.config.js'],
     },
     js.configs.recommended,
+    i18next.configs['flat/recommended'],
     ...tseslint.configs.recommended,
+
     {
         languageOptions: {
             globals: {
@@ -39,6 +42,7 @@ export default tseslint.config(
         rules: {
             ...prettierPlugin.configs.recommended.rules,
             ...eslintConfigPrettier.rules,
+
             'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
             'prefer-const': 'error',
             'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
