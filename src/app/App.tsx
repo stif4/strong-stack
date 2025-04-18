@@ -2,8 +2,8 @@ import React, { Suspense } from 'react';
 import { classNames } from 'shared/helpers/classNames/classNames';
 import { useTheme } from './providers/themeProviders';
 import { Navbar } from 'widgets/Navbar';
-import { AppRouter } from './providers/router';
 import { Sidebar } from 'widgets/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 import './styles/index.scss';
 
@@ -16,7 +16,7 @@ const App = () => {
                 <Navbar />
                 <div className="contentPage">
                     <Sidebar />
-                    <AppRouter />
+                    <Outlet />
                 </div>
             </Suspense>
         </div>

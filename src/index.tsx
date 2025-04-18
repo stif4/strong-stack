@@ -1,18 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './app/App';
-import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from 'app/providers/themeProviders';
+import { RouterProvider } from 'react-router-dom';
+import { appRouter } from 'app/providers/router';
 import './shared/config/i18n/i18n';
-import { PageLoader } from 'widgets/PageLoader/PageLoader';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
-root.render(
-    <BrowserRouter>
-        <ThemeProvider>
-            <App />
-        </ThemeProvider>
-    </BrowserRouter>,
-);
+root.render(<RouterProvider router={appRouter} />);
