@@ -3,6 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
+import path from 'path';
 import type { Config } from 'jest';
 
 const config: Config = {
@@ -15,11 +16,17 @@ const config: Config = {
     transform: {
         '^.+\\.(ts|tsx)$': 'ts-jest', // Трансформация TS через ts-jest
     },
+    modulePaths: ['<rootDir>src'],
     testMatch: [
         // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
     rootDir: '../../',
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    },
 
     // All imported modules in your tests should be mocked automatically
     // automock: false,
