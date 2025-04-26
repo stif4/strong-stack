@@ -41,6 +41,8 @@
     },
     "include": [
         "./config/jest/setupTests.ts",
+        "config/storybook/**/*",
+        "config/build/**/*",
         "src/**/*.ts",
         "src/**/*.tsx",
         "src/**/*.test.ts",
