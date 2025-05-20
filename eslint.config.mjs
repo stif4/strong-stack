@@ -19,7 +19,15 @@ export default tseslint.config(
         },
     },
     {
-        ignores: ['dist', 'node_modules', 'coverage', 'eslint.config.js'],
+        ignores: [
+            'dist',
+            'node_modules',
+            'coverage',
+            'eslint.config.mjs',
+            'stylelint.config.mjs',
+            'webpack.config.ts',
+            'build',
+        ],
     },
     js.configs.recommended,
     i18next.configs['flat/recommended'],
