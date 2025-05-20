@@ -8,7 +8,8 @@ export default {
     component: MainPage,
 } satisfies Meta<typeof MainPage>;
 
-const Template: StoryFn<typeof MainPage> = (args) => <MainPage {...args} />;
+const Template: StoryFn<typeof MainPage> = () => <MainPage />;
+//const Template: StoryFn<typeof MainPage> = (args) => <MainPage {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
