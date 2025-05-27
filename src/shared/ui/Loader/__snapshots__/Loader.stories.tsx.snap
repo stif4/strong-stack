@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/Loader Normal smoke-test 1`] = `
+<div class="app dark">
+  <div class="ldsEllipsis">
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+  </div>
+</div>
+`;

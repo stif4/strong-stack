@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`widget/Navbar Light smoke-test 1`] = `
+<div class="app dark">
+  <div class="src-widgets-Navbar-ui-Navbar-module__navbar">
+    <div class="src-widgets-Navbar-ui-Navbar-module__links">
+      <a class="src-shared-ui-AppLink-AppLink-module__appLink src-widgets-Navbar-ui-Navbar-module__mainLink src-shared-ui-AppLink-AppLink-module__secondary"
+         href="/"
+         data-discover="true"
+      >
+        Главная
+      </a>
+      <a class="src-shared-ui-AppLink-AppLink-module__appLink src-shared-ui-AppLink-AppLink-module__red"
+         href="/about"
+         data-discover="true"
+      >
+        О сайте
+      </a>
+    </div>
+  </div>
+</div>
+`;

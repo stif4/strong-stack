@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/ErrorPage Light smoke-test 1`] = `
+<div class="app dark">
+  <div class="src-pages-ErrorPage-ui-ErrorPage-module__errorPage">
+    <p>
+      Произошла непредвиденная ошибка
+    </p>
+    <button class="src-shared-ui-Button-Button-module__button undefined">
+      Обновить страницу
+    </button>
+  </div>
+</div>
+`;

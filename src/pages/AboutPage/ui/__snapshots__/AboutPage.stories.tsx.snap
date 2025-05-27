@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/AboutPage Normal smoke-test 1`] = `
+<div class="app dark">
+  <div>
+    О сайте
+  </div>
+</div>
+`;

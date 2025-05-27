@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/AppLink Primary smoke-test 1`] = `
+<div class="app dark">
+  <a class="src-shared-ui-AppLink-AppLink-module__appLink src-shared-ui-AppLink-AppLink-module__primary"
+     href="/"
+     data-discover="true"
+  >
+    Text
+  </a>
+</div>
+`;
+
+exports[`shared/AppLink Red smoke-test 1`] = `
+<div class="app dark">
+  <a class="src-shared-ui-AppLink-AppLink-module__appLink src-shared-ui-AppLink-AppLink-module__red"
+     href="/"
+     data-discover="true"
+  >
+    Text
+  </a>
+</div>
+`;
+
+exports[`shared/AppLink Secondary smoke-test 1`] = `
+<div class="app dark">
+  <a class="src-shared-ui-AppLink-AppLink-module__appLink src-shared-ui-AppLink-AppLink-module__secondary"
+     href="/"
+     data-discover="true"
+  >
+    Text
+  </a>
+</div>
+`;

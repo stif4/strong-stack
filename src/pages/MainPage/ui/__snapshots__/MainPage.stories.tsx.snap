@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/MainPage Normal smoke-test 1`] = `
+<div class="app dark">
+  <div>
+    <button class="src-shared-ui-Button-Button-module__button undefined">
+      throw error
+    </button>
+    <div>
+      Главная страница
+    </div>
+  </div>
+</div>
+`;

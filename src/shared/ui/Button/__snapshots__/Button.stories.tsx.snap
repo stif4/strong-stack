@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/Button Clear smoke-test 1`] = `
+<div class="app dark">
+  <button class="src-shared-ui-Button-Button-module__button src-shared-ui-Button-Button-module__clear">
+    Text
+  </button>
+</div>
+`;
+
+exports[`shared/Button Outline smoke-test 1`] = `
+<div class="app dark">
+  <button class="src-shared-ui-Button-Button-module__button src-shared-ui-Button-Button-module__outline">
+    Text
+  </button>
+</div>
+`;
+
+exports[`shared/Button Primary smoke-test 1`] = `
+<div class="app dark">
+  <button class="src-shared-ui-Button-Button-module__button undefined">
+    Text
+  </button>
+</div>
+`;
