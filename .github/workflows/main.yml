@@ -36,3 +36,5 @@ jobs:
               uses: chromaui/action@latest
               with:
                   projectToken: ${{ secrets.CHROMATIC_TOKEN }}
+                  buildScriptName: 'storybook:build'
+                  exitOnceUploaded: true  
