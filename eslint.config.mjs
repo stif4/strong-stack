@@ -27,7 +27,8 @@ export default tseslint.config(
             'stylelint.config.mjs',
             'webpack.config.ts',
             'build',
-            'storybook-static'
+            'storybook-static',
+            'scripts/generate-visual-json-report.js'
         ],
     },
     js.configs.recommended,
