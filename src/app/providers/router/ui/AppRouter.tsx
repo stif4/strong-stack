@@ -6,6 +6,7 @@ import { RouteConfig, routeConfig } from 'shared/config/routeConfig';
 import { PageLoader } from 'widgets/PageLoader/PageLoader';
 import { ErrorBoundaryRouter } from 'app/providers/errorBoundary';
 import ErrorBoundary from 'app/providers/errorBoundary/ui/ErrorBoundary';
+import { StoreProvider } from 'app/providers/storeProvider';
 
 const createRoute = ({
     path,
@@ -49,11 +50,13 @@ const appRouter = createBrowserRouter(
         <Route
             path="/"
             element={
-                <ErrorBoundary>
-                    <ThemeProvider>
-                        <App />
-                    </ThemeProvider>
-                </ErrorBoundary>
+                <StoreProvider>
+                    <ErrorBoundary>
+                        <ThemeProvider>
+                            <App />
+                        </ThemeProvider>
+                    </ErrorBoundary>
+                </StoreProvider>
             }
             errorElement={<ErrorBoundaryRouter />}
         >

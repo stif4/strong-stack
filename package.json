@@ -44,8 +44,8 @@
     "@types/dotenv-webpack": "^7.0.8",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "@types/webpack": "^5.28.5",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@types/webpack-dev-server": "^4.7.2",
@@ -94,12 +94,14 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.4",
     "i18next-http-backend": "^3.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.5.0"
   },
   "eslintConfig": {
